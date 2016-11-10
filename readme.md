@@ -38,3 +38,5 @@ VolleyTool.getInstance(this.getApplicationContext(), true).addToRequestQueue(str
 (3).读取请求并返回给主线程   
 (4).CatchDispatcher缓存中未找到改请求时，再使用NetWorkDispatcher去执行网络请求   
 (5).网络请求，并返回给主线程   
+
+原文地址：https://github.com/zhaolewei/11.5-Volley(https://github.com/zhaolewei/11.5-Volley)
