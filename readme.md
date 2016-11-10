@@ -28,8 +28,7 @@ VolleyTool.getInstance(this.getApplicationContext(), true).addToRequestQueue(str
 ````
 ##二、Volley的工作原理：
 
-[!img](https://raw.githubusercontent.com/zhaolewei/11.5-Volley/master/img1.png)
-
+![image](https://raw.githubusercontent.com/zhaolewei/11.5-Volley/master/img1.png)
 
 其中蓝色部分代表主线程，绿色部分代表缓存线程，橙色部分代表网络线程。
 从左上角开始：
@@ -38,4 +37,4 @@ VolleyTool.getInstance(this.getApplicationContext(), true).addToRequestQueue(str
 (2).请求被CatchDispatcher找出：找到->(3);未找到->(4)
 (3).读取请求并返回给主线程
 (4).CatchDispatcher缓存中未找到改请求时，再使用NetWorkDispatcher去执行网络请求
-(5).网络请求，并返回给主线程  
+(5).网络请求，并返回给主线程
